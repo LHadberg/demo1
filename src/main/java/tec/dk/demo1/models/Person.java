@@ -47,4 +47,14 @@ public class Person {
     public void setNote(String note) {
         this.note = note;
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", note='" + note + '\'' +
+                '}';
+    }
 }

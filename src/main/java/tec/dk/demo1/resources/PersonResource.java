@@ -38,13 +38,10 @@ public class PersonResource {
     @Consumes(MediaType.APPLICATION_JSON)
     public int postString(Person person) {
         PersonDataService dataService = new PersonDataService();
+        System.out.println("POST Called");
         return dataService.addPerson(person);
     }
-//    @PATCH
-//    @Produces(MediaType.TEXT_PLAIN)
-//    public String patchString() {
-//        return "fromPatch";
-//    }
+
     @DELETE
     @Produces(MediaType.TEXT_PLAIN)
     @Path("{personId}")
