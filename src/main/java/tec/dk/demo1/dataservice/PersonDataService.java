@@ -1,6 +1,5 @@
 package tec.dk.demo1.dataservice;
 
-import tec.dk.demo1.datasource.InMemoryDB;
 import tec.dk.demo1.datasource.MariaDB;
 import tec.dk.demo1.models.Person;
 import java.util.List;
